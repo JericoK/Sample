@@ -1,0 +1,60 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false
+  },
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "max-len": ["error", { "code": 100 }],
+    "prefer-promise-reject-errors": ["off"],
+    "react/jsx-filename-extension": ["off"],
+    "react/prop-types": ["warn"],
+    "no-return-assign": ["off"],
+    "import/no-unresolved": "off",
+    "import/namespace": "off",
+    "import/extensions": ["off"],
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "ignoreCase": true
+      }
+    ],
+    "no-param-reassign": [2, { "props": false }],
+    "import/prefer-default-export": "off",
+    "no-undef": "off",
+    "no-underscore-dangle": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "alias": {
+          "_assets": "./src/assets",
+          "_components": "./src/components",
+          "_constants": "./src/constants",
+          "_core-ui": "./src/core-ui",
+          "_helpers": "./src/helpers",
+          "_hooks": "./src/hooks",
+          "_pages": "./src/pages",
+          "_redux": "./src/redux",
+          "_routes": "./src/routes",
+          "_services": "./src/services",
+          "redux": "./node_modules/redux"
+        }
+      }
+    }
+  }
+}
