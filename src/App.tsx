@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center ">
       {modal ? <Modal setModal={setModal} /> : null}
-      <h1 className="text-3xl font-black mb-4 mt-4 font-montserrat">MERN To-Do App</h1>
+      <h1 className="text-3xl s font-black mb-4 mt-4 font-montserrat">MERN To-Do App</h1>
       <div className="w-4/12 h-full mb-4 px-10 py-11 rounded-xl bg-secondary">
         <div className="flex flex-row justify-center items-center">
           <h1 className="text-3xl font-black mr-auto font-montserrat">TODO</h1>
